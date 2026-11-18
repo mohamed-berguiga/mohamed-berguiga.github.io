@@ -268,7 +268,7 @@ footer { padding: 56px 0 36px; color: var(--muted); font-size: 14px; display: fl
       </div>
       <div class="badge b1"><b>ENISO</b>ingénieur GTE</div>
       <div class="badge b2"><b>DevOps · IA</b>spécialité visée</div>
-      <div class="badge b3"><b>6</b>projets publics</div>
+      <div class="badge b3"><b>7</b>projets publics</div>
     </div>
   </div>
 </header>
@@ -316,7 +316,7 @@ footer { padding: 56px 0 36px; color: var(--muted); font-size: 14px; display: fl
   <div role="tabpanel" id="p-exp" aria-labelledby="t-exp">
     <div class="tl">
       <div class="item"><div class="when">juillet – août 2026</div><h3>Stagiaire développeur full-stack</h3><p>LEONI Wiring Systems Tunisia – développement d'applications web en environnement industriel.</p></div>
-      <div class="item"><div class="when">2024 – 2026</div><h3>Projets d'ingénierie</h3><p>Système RAG, monitoring IoT avec Kafka, applications full-stack, mobile et sécurité (voir Projets).</p></div>
+      <div class="item"><div class="when">2024 – 2026</div><h3>Projets d'ingénierie</h3><p>Système multi-agents, système RAG, monitoring IoT avec Kafka, applications full-stack, mobile et sécurité (voir Projets).</p></div>
       <div class="item"><div class="when">vie associative</div><h3>Club ACM · Club Orange Tech · IEEE ENISO</h3><p>Membre actif de clubs techniques de l'école.</p></div>
     </div>
   </div>
@@ -333,7 +333,7 @@ footer { padding: 56px 0 36px; color: var(--muted); font-size: 14px; display: fl
 <section id="competences">
   <div class="head"><div><div class="eyebrow">04 · Compétences</div><h2 class="title">Ma boîte à outils</h2></div></div>
   <div class="skills">
-    <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M5 19l2.5-2.5M16.5 7.5 19 5"/></svg></div><h3>IA &amp; machine learning</h3>RAG, LLM, intégration d'API LLM (Gemini), Deep Learning (NVIDIA DLI)</div>
+    <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5 19 19M5 19l2.5-2.5M16.5 7.5 19 5"/></svg></div><h3>IA &amp; machine learning</h3>RAG, LLM, systèmes multi-agents, Ollama, intégration d'API LLM (Gemini), Deep Learning (NVIDIA DLI)</div>
     <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Temps réel, Big Data &amp; IoT</h3>Apache Kafka, streaming temps réel, IoT, systèmes embarqués</div>
     <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div><h3>Web &amp; backend</h3>React.js, Node.js, Express.js, API REST, MVC, JWT, Socket.io, Swagger / OpenAPI, MongoDB</div>
     <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Langages &amp; mobile</h3>Python, C, C++, JavaScript, Dart, Kotlin – Flutter, Android natif</div>
@@ -431,6 +431,14 @@ const PROJECTS = [
     kpis: [["85 %", "précision"], ["200", "profils indexés"], ["JSON", "source de données"]],
     skills: ["Concevoir une architecture RAG : récupération puis génération", "Intégrer un LLM via API", "Préparer et indexer des données structurées (JSON)", "Rédiger et ajuster des prompts", "Mesurer la précision des réponses"],
     tech: ["Python", "LLM", "RAG"], repo: "https://github.com/mohamed-berguiga/rag-stages-assistant" },
+  { id: "researchcrew", cat: "IA · Multi-agents", group: "IA", color: "#E11D48",
+    title: "ResearchCrew – système multi-agents",
+    short: "Quatre agents IA qui planifient, recherchent, rédigent et critiquent un rapport, 100 % en local.",
+    desc: "Équipe de quatre agents IA spécialisés (Planificateur, Chercheur, Rédacteur, Critique) qui produit automatiquement un rapport de recherche structuré à partir d'un simple sujet, avec une boucle d'auto-correction. Exécution 100 % locale avec Ollama et Llama 3.2.",
+    metric: ["4", "agents"],
+    kpis: [["4", "agents spécialisés"], ["Boucle", "auto-correction"], ["100 %", "local, sans API"]],
+    skills: ["Orchestrer plusieurs agents LLM qui se passent leur travail", "Mettre en place une boucle évaluateur–optimiseur (Rédacteur ↔ Critique)", "Ajouter des garde-fous (nombre maximum de révisions)", "Nettoyer et parser les sorties d'un LLM", "Exécuter un LLM open source en local avec Ollama"],
+    tech: ["Python", "Ollama", "Llama 3.2", "Multi-agents"], repo: "https://github.com/mohamed-berguiga/researchcrew" },
   { id: "kafka", cat: "Temps réel · Big Data", group: "Temps réel", color: "#0EA5A0",
     title: "Monitoring IoT temps réel",
     short: "Chaîne de streaming Kafka qui collecte et traite des mesures IoT en temps réel.",
