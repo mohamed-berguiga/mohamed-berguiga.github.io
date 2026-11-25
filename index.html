@@ -315,7 +315,7 @@ footer { padding: 56px 0 36px; color: var(--muted); font-size: 14px; display: fl
   </div>
   <div role="tabpanel" id="p-exp" aria-labelledby="t-exp">
     <div class="tl">
-      <div class="item"><div class="when">juillet – août 2026</div><h3>Stagiaire développeur full-stack</h3><p>LEONI Wiring Systems Tunisia – conception et développement de Smart Stage : application web temps réel de gestion des stagiaires (MERN, Socket.io), 3 rôles cloisonnés, 5 fonctionnalités IA (Gemini), sécurité JWT / bcrypt / Helmet.js, 25 tests automatisés (Jest).</p></div>
+      <div class="item"><div class="when">juillet – août 2026</div><h3>Stagiaire développeur full-stack</h3><p>LEONI Wiring Systems Tunisia – conception et développement de Smart Stage : application web temps réel de gestion des stagiaires (MERN, Socket.io), 3 rôles cloisonnés, 5 fonctionnalités IA (Gemini), sécurité JWT / bcrypt / Helmet.js, 25 tests automatisés (Jest) exécutés en intégration continue avec GitHub Actions.</p></div>
       <div class="item"><div class="when">2024 – 2026</div><h3>Projets d'ingénierie</h3><p>Système multi-agents, système RAG, monitoring IoT avec Kafka, applications full-stack, mobile et sécurité (voir Projets).</p></div>
       <div class="item"><div class="when">vie associative</div><h3>Club ACM · Club Orange Tech · IEEE ENISO</h3><p>Membre actif de clubs techniques de l'école.</p></div>
     </div>
@@ -338,7 +338,7 @@ footer { padding: 56px 0 36px; color: var(--muted); font-size: 14px; display: fl
     <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div><h3>Web &amp; backend</h3>React.js, Node.js, Express.js, API REST, MVC, JWT, Socket.io, Swagger / OpenAPI, MongoDB</div>
     <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Langages &amp; mobile</h3>Python, C, C++, JavaScript, Dart, Kotlin – Flutter, Android natif</div>
     <div class="skill"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Sécurité</h3>RSA-OAEP 2048 bits, Web Crypto API, JWT, bcrypt, anti-injection NoSQL, Helmet.js</div>
-    <div class="skill learning"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h11l-3-3M20 17H9l3 3"/></svg></div><h3>DevOps</h3>Docker Compose (projet Kafka), pipelines CI/CD, Kubernetes, FastAPI, LangGraph</div>
+    <div class="skill learning"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h11l-3-3M20 17H9l3 3"/></svg></div><h3>DevOps</h3>GitHub Actions (CI en place sur Smart Stage), Docker Compose (projet Kafka) ; à approfondir : CD, Kubernetes, FastAPI, LangGraph</div>
   </div>
 </section>
 
@@ -451,11 +451,11 @@ const PROJECTS = [
   { id: "smart-stage", cat: "Full-stack + IA", group: "Full-stack", color: "#7C4DDB",
     title: "Smart Stage",
     short: "Plateforme web temps réel avec trois rôles et cinq fonctionnalités d'IA (Gemini).",
-    desc: "Projet de stage chez LEONI Wiring Systems Tunisia (juillet–août 2026). Application web temps réel de gestion des stagiaires avec trois rôles cloisonnés (RH, encadrant, stagiaire) et cinq fonctionnalités d'IA (Gemini) branchées sur les données réelles. Sécurité JWT, bcrypt, Helmet.js, anti-injection NoSQL ; 25 tests automatisés. Interface générée avec Lovable puis adaptée.",
+    desc: "Projet de stage chez LEONI Wiring Systems Tunisia (juillet–août 2026). Application web temps réel de gestion des stagiaires avec trois rôles cloisonnés (RH, encadrant, stagiaire) et cinq fonctionnalités d'IA (Gemini) branchées sur les données réelles. Sécurité JWT, bcrypt, Helmet.js, anti-injection NoSQL ; 25 tests automatisés lancés à chaque push par une CI GitHub Actions (Node 20 et 22). Interface générée avec Lovable puis adaptée.",
     metric: ["25", "tests Jest"],
     kpis: [["3", "rôles cloisonnés"], ["5", "fonctions IA"], ["25", "tests Jest"]],
-    skills: ["Construire une application MERN complète", "Ajouter du temps réel avec WebSocket (Socket.io)", "Gérer des droits d'accès par rôle", "Intégrer l'API Gemini sur des données réelles", "Écrire des tests automatisés avec Jest"],
-    tech: ["MongoDB", "Express", "React", "Node.js", "Socket.io", "Gemini", "Jest"], repo: "https://github.com/mohamed-berguiga/smart-stage" },
+    skills: ["Construire une application MERN complète", "Ajouter du temps réel avec WebSocket (Socket.io)", "Gérer des droits d'accès par rôle", "Intégrer l'API Gemini sur des données réelles", "Écrire des tests automatisés avec Jest", "Mettre en place une intégration continue avec GitHub Actions"],
+    tech: ["MongoDB", "Express", "React", "Node.js", "Socket.io", "Gemini", "Jest", "GitHub Actions"], repo: "https://github.com/mohamed-berguiga/smart-stage" },
   { id: "rsa", cat: "Sécurité", group: "Sécurité", color: "#D97706",
     title: "Application de chiffrement RSA",
     short: "Chiffrement et déchiffrement RSA dans le navigateur avec la Web Crypto API.",
